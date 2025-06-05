@@ -17,8 +17,8 @@ This project demonstrates how to create and query a simple sales database using 
 
 - [SQLite database file](task7_sales_data.db) — SQLite database file
 - [Main Python script](task7.py) — Main Python script
-- [Bar chart showing revenue by product](sales_chart.png) — Bar chart showing revenue by product
-- [Line chart showing quantity of products](sales_chart3.png) — Line chart showing quantity of products
+- [Bar chart](sales_chart.png) — Bar chart showing revenue by product
+- [Line chart](sales_chart3.png) — Line chart showing quantity of products
 - [Project description](README.md) — Project description
 
 ---
