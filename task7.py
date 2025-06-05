@@ -24,30 +24,30 @@ a = sqlite3.connect('task7_sales_data.db')
 # ('Eraser', 10, 1)])
 # a.commit()
 
-# query = """
-# SELECT product, SUM(quantity) AS total_quantity, SUM(quantity * price) AS revenue
-# FROM sales_dataa GROUP BY product
-# """
+query = """
+SELECT product, SUM(quantity) AS total_quantity, SUM(quantity * price) AS revenue
+FROM sales_dataa GROUP BY product
+"""
 
-# df = pd.read_sql_query(query, a)
+df = pd.read_sql_query(query, a)
 
-# # Step 5: Print summary
-# print("Sales Summary:")
-# print(df)
+# Print summary
+print("Sales Summary:")
+print(df)
 
-# query2 = """ 
-# select * from sales_dataa """
-# dff = pd.read_sql_query(query2,a)
-# print (dff)
+query2 = """ 
+select * from sales_dataa """
+dff = pd.read_sql_query(query2,a)
+print (dff)
 
-# # Step 6: Plot bar chart of revenue by product
-# df.plot(kind='bar', x='Product', y='revenue', legend=False)
-# plt.title("Revenue by Product")
-# plt.xlabel("Product")
-# plt.ylabel("Revenue")
-# plt.tight_layout()
-# plt.savefig("sales_chart.png")
-# plt.show()
+#  Plot bar chart of revenue by product
+df.plot(kind='bar', x='Product', y='revenue', legend=False)
+plt.title("Revenue by Product")
+plt.xlabel("Product")
+plt.ylabel("Revenue")
+plt.tight_layout()
+plt.savefig("sales_chart.png")
+plt.show()
 
 
 # number of quantity of products
